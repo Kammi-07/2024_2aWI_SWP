@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css_reset.css">
+    <style>
+        .container1 {
+
+            padding: 50px;
+            border-color: black;
+            border-width: 1px;
+            border-style: solid;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+
+        }
+
+        .c1box {
+            height: 50px;
+            width: 100px;
+            border-color: black;
+            border-width: 1px;
+            border-style: solid;
+        }
+
+        @media (min-width: 600px) {
+            .container1 {
+
+                padding: 50px;
+                border-color: black;
+                border-width: 1px;
+                border-style: solid;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+
+            }
+
+            .c1box {
+                height: 50px;
+                width: 100px;
+                border-color: black;
+                border-width: 1px;
+                border-style: solid;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container1">
+        <div class="c1box" id="1"></div>
+        <div class="c1box" id="2"></div>
+        <div class="c1box" id="3"></div>
+    </div>
+
+</body>
+
+</html>
