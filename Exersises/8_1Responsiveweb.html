@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -14,9 +15,8 @@
             border-width: 1px;
             border-style: solid;
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             justify-content: space-between;
-
 
         }
 
@@ -26,17 +26,54 @@
             border-color: black;
             border-width: 1px;
             border-style: solid;
+            margin: 5%;
         }
 
-        @media (min-width: 10px) {
+        .container2 {
+            display: grid;
+            grid-template-columns: 33% 33% 33%;
+            grid-template-rows: 25%;
+            grid-auto-rows: minmax(100px, 200px);
+            background-color: white;
+            border-width: 1px;
+            border-style: solid;
+        }
+
+        .c2box1 {
+            grid-row-start: span 2;
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-color: black;
+            border-width: 1px;
+            border-style: solid;
+            grid-column-start: span 3;
+        }
+
+        .c2box2 {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-color: black;
+            border-width: 1px;
+            border-style: solid;
+            grid-row-start: span 2;
+            grid-column-start: span 1;
+
+        }
+
+
+
+        @media (min-width: 800px) {
             .container1 {
 
+                padding: 50px;
                 border-color: black;
                 border-width: 1px;
                 border-style: solid;
                 display: flex;
-                flex-direction: column;
-
+                flex-direction: row;
+                justify-content: space-between;
 
 
             }
@@ -47,20 +84,61 @@
                 border-color: black;
                 border-width: 1px;
                 border-style: solid;
-                margin: 10px;
             }
 
+            .container2 {
+
+                display: grid;
+                grid-template-columns: 33% 33% 33%;
+                grid-template-rows: 25%;
+                grid-auto-rows: minmax(100px, 200px);
+                background-color: white;
+                border-width: 1px;
+                border-style: solid;
+            }
+
+            .c2box1 {
+                grid-row-start: span 2;
+                background-color: white;
+                padding: 10px;
+                margin: 10px;
+                border-color: black;
+                border-width: 1px;
+                border-style: solid;
+                grid-column-start: span 2;
+            }
+
+            .c2box2 {
+                background-color: white;
+                padding: 10px;
+                margin: 10px;
+                border-color: black;
+                border-width: 1px;
+                border-style: solid;
+                grid-row-end: span 2;
+
+
+            }
+
+            .bigcontainer {
+                padding: 10px;
+            }
         }
     </style>
 </head>
 
 <body>
-    <div class="container1">
-        <div class="c1box" id="1"></div>
-        <div class="c1box" id="2"></div>
-        <div class="c1box" id="3"></div>
+    <div class="bigcontainer">
+        <div class="container1">
+            <div class="c1box"></div>
+            <div class="c1box"></div>
+            <div class="c1box"></div>
+        </div>
+        <div class="container2">
+            <div class="c2box1"></div>
+            <div class="c2box2"></div>
+        </div>
     </div>
-    <div class="container2"></div>
 
 </body>
 
