@@ -12,8 +12,6 @@
 }
 
 
-
-
 .logo {
     background-color: #BB131A;
     height: 100px;
@@ -25,7 +23,7 @@
     padding-right: 10%;
 }
 
-.auswahl {}
+
 
 .auswahlpunkte {
     height: 50px;
@@ -39,4 +37,21 @@
     color: white;
     background-color: #76110d;
 
+}
+
+.radio {
+    padding: 10px;
+    background-color: grey;
+
+}
+
+.radioboxin {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 25%;
+    grid-auto-rows: minmax(100px, 200px);
+    background-color: white;
+    border-width: 1px;
+    border-style: solid;
 }
