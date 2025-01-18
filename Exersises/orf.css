@@ -55,3 +55,18 @@
     border-width: 1px;
     border-style: solid;
 }
+
+.artikel {
+    margin-top: -100px;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 100%;
+    height: auto;
+
+}
+
+.artikel1 {
+    background-color: white;
+
+
+}
