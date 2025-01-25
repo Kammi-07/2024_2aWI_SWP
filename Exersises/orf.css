@@ -189,6 +189,28 @@
         padding: 5%;
         padding-top: 7%;
         display: grid;
-        grid-template-columns: 70% auto;
+        grid-template-columns: 80% auto;
+        grid-template-rows: 50%;
+    }
+
+    .tietelrestartikel {
+        color: #466194;
+        font-size: 50px;
+        font-style: normal;
+    }
+
+
+
+    .textrestartikel {
+        padding: 5px;
+    }
+
+    .restartikelbildex {
+        padding: 2%;
+    }
+
+    .restartikelbildex img {
+        max-width: 100%;
+        object-fit: contain;
     }
 }
