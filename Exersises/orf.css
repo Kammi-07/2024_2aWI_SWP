@@ -11,6 +11,17 @@
     align-items: center;
     padding-left: 15px;
     padding-right: 15px;
+    justify-content: space-between;
+
+}
+
+.burgermenu img {
+    height: auto;
+    width: auto;
+}
+
+.auswahlpunkte {
+    display: none;
 }
 
 .radio {
@@ -30,6 +41,48 @@
     border-style: solid;
 }
 
+.vorarlbergheute {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.orfvorarlberg {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+
+
+
+
+
+.container_artikel img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+
+
+.Artikrlueberschrift {
+    color: white;
+    justify-content: space-around;
+    margin-top: -100px;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
+.textartikrl {
+    text-shadow: -1px -1px 1px rgba(255, 255, 255, .1), 1px 1px 1px rgba(0, 0, 0, .5), 0px -1px 20px #000000;
+    font-size: 20px;
+}
 
 @media (min-width: 800px) {
     .topdiv {
@@ -55,6 +108,10 @@
         align-items: center;
         padding-left: 15px;
         padding-right: 15px;
+    }
+
+    .burgermenu {
+        display: none;
     }
 
 
@@ -126,5 +183,12 @@
     .textartikrl {
         text-shadow: -1px -1px 1px rgba(255, 255, 255, .1), 1px 1px 1px rgba(0, 0, 0, .5), 0px -1px 20px #000000;
         font-size: 20px;
+    }
+
+    .artikelrest {
+        padding: 5%;
+        padding-top: 7%;
+        display: grid;
+        grid-template-columns: 70% auto;
     }
 }
