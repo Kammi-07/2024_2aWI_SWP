@@ -84,6 +84,41 @@
     font-size: 20px;
 }
 
+.artikelrest {
+    padding: 5%;
+    padding-top: 15%;
+    border-color: black;
+
+
+}
+
+.restartikel {
+    display: grid;
+    grid-template-columns: 80% auto;
+    grid-template-rows: 50%;
+}
+
+.tietelrestartikel {
+    color: #466194;
+    font-size: 50px;
+    font-style: normal;
+}
+
+
+
+.textrestartikel {
+    display: none;
+}
+
+.restartikelbildex {
+    padding: 2%;
+}
+
+.restartikelbildex img {
+    max-width: 100%;
+    object-fit: contain;
+}
+
 @media (min-width: 800px) {
     .topdiv {
         background-color: rgb(145, 6, 6);
@@ -133,6 +168,7 @@
     .radio {
         padding: 10px;
         background-color: grey;
+
 
     }
 
@@ -188,6 +224,10 @@
     .artikelrest {
         padding: 5%;
         padding-top: 7%;
+
+    }
+
+    .restartikel1 {
         display: grid;
         grid-template-columns: 80% auto;
         grid-template-rows: 50%;
@@ -203,6 +243,10 @@
 
     .textrestartikel {
         padding: 5px;
+    }
+
+    .textrestartikel {
+        display: contents;
     }
 
     .restartikelbildex {
