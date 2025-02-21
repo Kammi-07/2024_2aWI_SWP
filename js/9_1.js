@@ -1,17 +1,12 @@
 console.log("console funktioniert");
-let x = 0;
-while (x = 223) {
-    if (x % 5 === 0) {
+for (let x = 1; x <= 222; x++) {
+    if (x % 5 == 0 && x % 7 == 0) {
+        console.log("FooBar");
+    } else if (x % 5 == 0) {
         console.log("Foo");
-    }
-    if (x % 7 === 0) {
-        console.log(Bar);
-    }
-    if (x % 5 === 0 && x % 7 === 0) {
-
-    }
-    else {
+    } else if (x % 7 == 0) {
+        console.log("Bar");
+    } else {
         console.log(x);
     }
-    x = x + 1;
 }
