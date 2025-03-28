@@ -127,3 +127,15 @@ function log(text, zahl) {
 } let hihihihihihihhh = "robin ist schwarz";
 let sangöksbgksdbfkögbsd = 18;
 log(hihihihihihihhh, sangöksbgksdbfkögbsd);
+
+//const macht dass eine VAriable nach erstellens nicht mehr verändert werden kann
+const sumfuncVar = function (a, b) {
+    return a + b;
+}
+const printNumber = (n) => {
+    console.log(a)
+}
+//string fumktions
+let input = "1 2 3 4 5 6 7 8 9 10";
+let numbersString = input.split(" ");
+numbersString.forEach(printNumber);
