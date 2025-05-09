@@ -1,52 +1,34 @@
+function calculateSum() {
 
+    let inputA = document.getElementById("inputA").value;
+    let inputB = document.getElementById("inputB").value;
 
-function getValues() {
-    let num1 = parseFloat(document.getElementById("number1").value);
-    let num2 = parseFloat(document.getElementById("number2").value);
-    return [num1, num2];
+    let result = Number(inputA) + Number(inputB);
+    let resultElement = document.getElementById("result")
+    resultElement.innerHTML = result;
 }
 
-function buttonClicked() {
-    // alert("Calculate button clicked");
-    console.log("Calculate button clicke");
-
+function calculateSubtract() {
+    let inputA = document.getElementById("inputA").value;
+    let inputB = document.getElementById("inputB").value;
+    let result = Number(inputA) - Number(inputB);
+    document.getElementById("result").innerHTML = result;
 }
 
-
-
-
-function Addition() {
-    let [num1, num2] = getValues();
-    let result = num1 + num2;
-
-    // alert("Addition:" + result);
-    console.log("Addition:" + result);
-
+function calculateMultiply() {
+    let inputA = document.getElementById("inputA").value;
+    let inputB = document.getElementById("inputB").value;
+    let result = Number(inputA) * Number(inputB);
+    document.getElementById("result").innerHTML = result;
 }
 
-function Subtraction() {
-    let [num1, num2] = getValues();
-    //  alert("Subtraction:" + result);
-    console.log("Subtraction:" + result);
-
-}
-
-function Multiplication() {
-    let [num1, num2] = getValues();
-    let result = num1 * num2;
-    console.log("Multiplication:" + result);
-}
-
-function Division() {
-    let [num1, num2] = getValues();
-    if (num2 !== 0) {
-        let result = num1 / num2;
-        // alert("Division:" + result);
-        console.log("Division:" + result);
-
+function calculateDivide() {
+    let inputA = document.getElementById("inputA").value;
+    let inputB = document.getElementById("inputB").value;
+    if (Number(inputB) === 0) {
+        document.getElementById("result").innerHTML = "Fehler: ÷0";
     } else {
-        console.log("Division durch 0 ist nicht erlaubt!");
-        // alert("Division durch 0 ist nicht erlaubt!");
-
+        let result = Number(inputA) / Number(inputB);
+        document.getElementById("result").innerHTML = result;
     }
 }

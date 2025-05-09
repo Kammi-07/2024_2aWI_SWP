@@ -1,3 +1,69 @@
-#contend {
-    color: blue;
+/*zusammen mit nico und liam gemacht*/
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.calculator {
+    background-color: white;
+    padding: 20px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+.top-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 45%;
+}
+
+.inputs input {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.operations {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    width: 45%;
+}
+
+.operations button {
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: skyblue;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+}
+
+.operations button:hover {
+    background-color: skyblue;
+}
+
+.result {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    padding-top: 10px;
+    border-top: 1px solid #ccc;
+    color: skyblue;
 }

@@ -4,25 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Super Calculator</title>
+    <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
-
 </head>
 
 <body>
-    <h1 id="heading">Super page </h1>
-    <div id="content">
-        A<input type="number" id="number1">
-        B<input type="number" id="number2">
-        <button onclick="buttonClicked()">Calculate</button>
-        <button onclick="Subtraction()">Subtraction</button>
-        <button onclick="Addition()">Addition</button>
-        <button onclick="Multiplication()">Multiplication</button>
-        <button onclick="Division()">Division</button>
-
-
+    <div class="calculator">
+        <div class="top-section">
+            <div class="inputs">
+                <input type="number" id="inputA">
+                <input type="number" id="inputB">
+            </div>
+            <div class="operations">
+                <button onclick="calculateSum()">+</button>
+                <button onclick="calculateSubtract()">−</button>
+                <button onclick="calculateMultiply()">×</button>
+                <button onclick="calculateDivide()">÷</button>
+            </div>
+        </div>
+        <div class="result">
+            <span id="result">0</span>
+        </div>
     </div>
-    <div id="output"></div>
 </body>
 
 </html>
