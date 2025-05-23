@@ -1,0 +1,21 @@
+.container {
+    border: 1px;
+    padding: 40px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: black;
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+.scores {
+    border: 1px;
+    padding: 5px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: black;
+    margin: 10px;
+    font-weight: lighter;
+    font-size: 20px;
+
+}
