@@ -6,18 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="Zufalsgenerator.js" defer></script>
+    <link rel="stylesheet" href="Zufalsgenerator.css">
 </head>
 
 <body>
-    <div>
-        <div>kleinere Zahl:
-            <input type="number" id="min">
+    <div class="container">
+        <div class="numbers">
+            <div>kleinere Zahl:
+                <input type="number" id="min">
+            </div>
+            <div>größere Zahl:
+                <input type="number" id="max">
+            </div>
         </div>
-        <div>größere Zahl:
-            <input type="number" id="max">
+        <div class="buttonon"> <button onclick="Generate()">Generate</button>
         </div>
-    </div>
-    <div>
+        <div class="resulthtml"></div>
         <div id="result"></div>
     </div>
 
